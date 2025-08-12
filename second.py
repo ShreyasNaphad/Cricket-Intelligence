@@ -5,20 +5,9 @@ import joblib
 import streamlit as st
 import base64
 import os
-import gdown
 
-MODEL_ID = "18UodsX11QwaOAj-ouUXIQTSOKBLJW9t7"
-MODEL_PATH = "model.pkl"  # you can change path or filename if desired
 
-@st.cache_resource
-def load_model():
-    if not os.path.exists(MODEL_PATH):
-        url = f"https://drive.google.com/uc?id={MODEL_ID}"
-        st.write("Downloading large model... Hang tight!")
-        gdown.download(url, MODEL_PATH, quiet=False)
-    return joblib.load(MODEL_PATH)
 
-model = load_model()
 
 # =========================
 # App Config
@@ -362,6 +351,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
