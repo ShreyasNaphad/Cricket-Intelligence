@@ -111,19 +111,21 @@ st.markdown(
         text-shadow: 0px 0px 8px rgba(0,245,212,0.6);
       }
 
+      /* Animated buttons */
       div.stButton > button[kind="primary"] {
-        background: linear-gradient(135deg, #FFD700, #FFA500); /* Gold to Orange gradient */
-        color: #1E1E1E; /* A darker, almost black text color for better readability */
+        background-color: #FF4B4B; /* This is the solid red color from your screenshot */
+        color: #FFFFFF; /* White text for high contrast */
         font-weight: 700;
-        border: none; /* Removes the default border which might clash */
+        border: none; /* Removes any default border for a cleaner look */
         border-radius: 12px;
         padding: 0.6em 1em;
         transition: all 0.2s ease;
-        box-shadow: 0 0 12px rgba(255, 215, 0, 0.6); /* A nice glow effect */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* A subtle shadow */
       }
       div.stButton > button[kind="primary"]:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* A brighter glow on hover */
+        background-color: #E04040; /* A slightly darker red on hover */
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       }
 
       /* Chips */
@@ -353,6 +355,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
