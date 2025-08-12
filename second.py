@@ -163,7 +163,7 @@ st.markdown(
 # =========================
 @st.cache_resource(show_spinner=False)
 def load_assets():
-    path_to_model = "Cricket-Intelligence/PycharmProjects/Cricket Intelligence/final_rf_model.pkl"
+    path_to_model = "PycharmProjects/Cricket Intelligence/final_rf_model.pkl"
     # Load the model using its full path
     model_ = joblib.load(path_to_model)
     encoders_ = joblib.load("label_encoders.pkl")
@@ -353,6 +353,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
