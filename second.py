@@ -79,7 +79,7 @@ team_code_map = {
 
 def show_team_logo(team_name):
     team_code = team_code_map.get(team_name, "").lower()
-    logo_path = f"Imagess/{team_code}.png"
+    logo_path = f"{team_code}.png"
     if os.path.exists(logo_path):
         st.image(logo_path, width=100)
     else:
@@ -362,6 +362,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
