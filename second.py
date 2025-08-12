@@ -112,18 +112,20 @@ st.markdown(
       }
 
       /* Animated buttons */
+            /* Animated buttons */
       div.stButton > button[kind="primary"] {
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
-        color: black;
+        background: linear-gradient(135deg, #FFD700, #FFA500); /* Gold to Orange gradient */
+        color: #1E1E1E; /* A darker, almost black text color for better readability */
         font-weight: 700;
+        border: none; /* Removes the default border which might clash */
         border-radius: 12px;
         padding: 0.6em 1em;
         transition: all 0.2s ease;
-        box-shadow: 0 0 12px rgba(0,245,212,0.4);
+        box-shadow: 0 0 12px rgba(255, 215, 0, 0.6); /* A nice glow effect */
       }
       div.stButton > button[kind="primary"]:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(0,245,212,0.6);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* A brighter glow on hover */
       }
 
       /* Chips */
@@ -353,6 +355,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
