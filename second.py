@@ -101,34 +101,13 @@ st.markdown(
         backdrop-filter: blur(8px);
       }
 
-      /* Neon gradient heading */
       .neon-text {
         font-size: 34px;
         font-weight: 900;
-, 
-          #f15bb5, 
-          #00f5d4
-        );
-                background: linear-gradient(
-          90deg, 
-          var(--primary), 
-          var(--secondarybackground-size: 400% 400%;
-        -webkit-background-clip: text;), 
-          var(--primary)
-        );
-        background-size: 200% auto; /* Make
-        -webkit-text-fill-color: transparent;
-        animation: gradient-flow 15s background larger to allow for movement */
+        background: linear-gradient(90deg, var(--primary), #f15bb5); /* CHANGED: Blue is now Pink */
         -webkit-background-clip: text;
-        -webkit-text-fill ease infinite; /* Applies the animation */
-        text-shadow: 0px 0px 10px rgba(-color: transparent;
-        text-shadow: 0px 0px 8px rgba(0,0, 245, 212, 0.7); /* Stronger glow */
-      }
-
-      245,212,0.6);
-        animation: animate-gradient 4s linear infinite; /* Apply/* Add this new keyframes block for the animation */
-      @keyframes gradient-flow {
-        0% { the animation */
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0px 0px 8px rgba(0,245,212,0.6); /* This is unchanged, but works with the pink */
       }
 
       /* Gradient Animation */
@@ -383,6 +362,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
