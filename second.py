@@ -111,8 +111,6 @@ st.markdown(
         text-shadow: 0px 0px 8px rgba(0,245,212,0.6);
       }
 
-      /* Animated buttons */
-            /* Animated buttons */
       div.stButton > button[kind="primary"] {
         background: linear-gradient(135deg, #FFD700, #FFA500); /* Gold to Orange gradient */
         color: #1E1E1E; /* A darker, almost black text color for better readability */
@@ -355,6 +353,7 @@ if predict_clicked:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 
